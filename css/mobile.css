@@ -1,0 +1,142 @@
+
+/*media Queries 767
+----------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    body{font-family: 'Noto Serif JP', serif;}
+    h2{
+        font-family: 'Noto Serif JP', serif;
+        margin:40px 0;}
+    .sp_br{display:block;}
+    .sp_menubtn{
+        display:block;
+        position:fixed;
+        width:45px;
+        height:40px; 
+        margin:10px;
+        z-index:110;
+    }
+    .sp_menubtn p{
+        border-bottom:1px solid #000000;
+        transition:all ease .5s;
+    }
+    
+    .sp_menubtn:before,.sp_menubtn:after{ 
+        display:block;
+        position:absolute;
+        width:100%;
+        height:1px;
+        background:#000000;
+    }
+    .sp_menubtn:before{
+        content:"";
+        top:30%;  
+        transition:all ease .5s; 
+    }
+    .sp_menubtn:after{
+        content:"menu";
+        text-align:center;
+        top:60%;  
+        font-size:90%;
+    }
+    .sp_menubtn.open p{position:relative;top:30%;transform: rotate(-140deg);}
+    .sp_menubtn.open:before{
+        content:"";
+        top:30%;  
+        transform: rotate(140deg);
+    }
+    .sp_menubtn.open:after{
+        height:0;
+    }
+    .gnav{
+        display:table;
+        width:100%;
+        height: 100vh;
+        opacity:1;
+        visibility: visible;
+        background:rgb(247 214 155 / 60%);
+    }
+    .gnav.hidden{
+        display:none;
+        opacity:0;
+        visibility: hidden;
+}
+    .gnav-list{
+        display:table-cell;
+        vertical-align: middle;
+      
+
+    }
+    .gnav-item{text-align:center;}
+    
+    div.scroll{right: 16%;}
+    .wrapper{
+        max-width:100vw;
+        padding: 0 5%;
+        overflow: hidden;}
+    .more_btn, .more_btn_hov {
+        width: 90vw;
+    }
+    .more_btn a{
+       padding: 0 90px;
+    }
+    .section-body.Nostalgia{
+        width:100%;
+        position:static;
+    }
+    #place-section{padding-bottom:240px;}
+    .work-item{width:100%;margin-bottom:40px;}
+    .work-title{line-height:2.5;}
+    .page-top {
+        width:60px;
+        height:60px;
+        }
+    .page-top::before{
+        top: 0%;
+        right: 60%;
+    }
+    .page-top:hover::before {
+        top: -15%;
+      }
+    figure{
+        text-align:center;}
+    figure img{
+            width:80%;  
+        }
+    .section-lead{width:80%;}
+
+    .section-body.sink .sink-image-wrapper{
+        width:120%;
+        margin-left:10%;}
+
+    .sink-body{width:100%;}
+    /*.sink-item p{margin-top:100vw;}*/
+    .imageboard{height:auto;margin-bottom: 50px;}
+
+    .imageboard .image-1{
+        margin-top:100px;
+        position: relative;
+        width:64%;}
+
+    figure.image-1 img{
+        width:100%;
+    }
+        
+    
+    .imageboard .image-2{
+   
+    width: 100vw;
+    margin-top: 100px;
+    position: relative;}
+
+    .Nostalgia-section {
+        padding:20px 0;}
+    
+
+    .footer {
+        background:url(../img/4153030_m.jpg)no-repeat center bottom/150%;
+        height: 90vw;
+      }
+    .quote{margin:auto 5px;}
+
+
+}
